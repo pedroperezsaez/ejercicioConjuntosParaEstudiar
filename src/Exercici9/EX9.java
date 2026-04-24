@@ -16,21 +16,22 @@ public class EX9 {
         test2(l2);
     }
 
-    static void test2(List<Integer> list){
+    static void test2(List<Integer> list) {
         System.out.println("comienza test");
-        long time1= System.currentTimeMillis();
+        long time1 = System.currentTimeMillis();
         for (int i = 0; i < 1000; i++) {
-            int random=(int)(Math.random()*list.size());
-            int element=list.remove(random);
+            int random = (int) (Math.random() * list.size());
+            int element = list.remove(random);
             list.add(random);
         }
-        long time2=System.currentTimeMillis();
-        long elapsed=time2-time1;
-        System.out.println("han pasado: "+ elapsed+ " ms");
+        long time2 = System.currentTimeMillis();
+        long elapsed = time2 - time1;
+        System.out.println("han pasado: " + elapsed + " ms");
     }
-    static void fill(List<Integer> list){
+
+    static void fill(List<Integer> list) {
         for (int i = 0; i < 5_000_000; i++) {
-            int random=(int)(Math.random()*5000);
+            int random = (int) (Math.random() * 5000);
             list.add(random);
         }
     }

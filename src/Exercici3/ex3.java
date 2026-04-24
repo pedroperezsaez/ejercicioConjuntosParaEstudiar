@@ -18,14 +18,16 @@ public class ex3 {
         System.out.println(persons);
     }
 }
-class PersonBirthComparator implements  Comparator<Person>{
+
+class PersonBirthComparator implements Comparator<Person> {
     @Override
-    public  int compare(Person o1, Person o2){
+    public int compare(Person o1, Person o2) {
         // sirve para devolve numero negativo, positivo o  o para saber si es menor mayor o igual las dos comparaciones
         return o1.birthYear - o2.birthYear;
     }
 }
-class PersonNameComparator implements Comparator<Person>{
+
+class PersonNameComparator implements Comparator<Person> {
     @Override
     public int compare(Person o1, Person o2) {
         //Mirar quinadels dos noms es mes curt i despres fer un bucle per cada lletra, i si en trobam dues de diferents
@@ -33,25 +35,25 @@ class PersonNameComparator implements Comparator<Person>{
         String s1 = o1.name;
         String s2 = o2.name;
         boolean intercanvi = false;
-        if (s1.length()>s2.length()){
-            String t=s1;
-            s1=s2;
-            s2=t;
-            intercanvi=true;
+        if (s1.length() > s2.length()) {
+            String t = s1;
+            s1 = s2;
+            s2 = t;
+            intercanvi = true;
         }
         for (int i = 0; i < s1.length(); i++) {
-            char c1=s1.charAt(0);
-            char c2= s2.charAt(0);
-            if (c1<c2){
+            char c1 = s1.charAt(0);
+            char c2 = s2.charAt(0);
+            if (c1 < c2) {
                 return intercanvi ? 1 : -1;
             }
-            if (c2<c1){
+            if (c2 < c1) {
                 return intercanvi ? -1 : 1;
             }
         }
-        if (s1.length()== s2.length()) return 0;
+        if (s1.length() == s2.length()) return 0;
         // s2 seria mas larga
-        if (intercanvi){
+        if (intercanvi) {
             return -1;
         }
         return 1;
@@ -61,10 +63,12 @@ class PersonNameComparator implements Comparator<Person>{
 class Person {
     int birthYear;
     String name;
+
     Person(String name, int birthYear) {
         this.birthYear = birthYear;
         this.name = name;
     }
+
     @Override
     public String toString() {
         return String.format("%s %d", name, birthYear);

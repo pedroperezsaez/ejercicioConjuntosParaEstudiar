@@ -17,7 +17,8 @@ public class Ex5 {
 
 
     }
-    public static void barajarPaises(List<Country> countryList){
+
+    public static void barajarPaises(List<Country> countryList) {
         for (int i = 0; i < 5; i++) {
             System.out.println(countryList);
             Collections.shuffle(countryList);
@@ -25,12 +26,14 @@ public class Ex5 {
     }
 }
 
-class Country{
+class Country {
     String pais;
-    Country(String pais){
-        this.pais=pais;
+
+    Country(String pais) {
+        this.pais = pais;
     }
-    public String toString(){
+
+    public String toString() {
         return pais;
     }
 }

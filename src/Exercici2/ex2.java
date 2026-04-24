@@ -30,9 +30,10 @@ public class ex2 {
             if (this.n < c.n) return -1;
             return 1;
         }
+
         @Override
-        public String toString(){
-            String s="marca: "+ this.marca+ "n: " +this.n;
+        public String toString() {
+            String s = "marca: " + this.marca + "n: " + this.n;
             return s;
         }
     }

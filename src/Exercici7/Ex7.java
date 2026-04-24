@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Ex7 {
     public static void main(String[] args) {
-        List<Object> animales=new ArrayList<>();
+        List<Object> animales = new ArrayList<>();
         animales.add(new Cat("gato1"));
         animales.add(new Dog("perro1"));
         animales.add(new Cat("gato2"));
@@ -18,10 +18,10 @@ public class Ex7 {
     static void tipoAnimal(List<Object> animales) {
         for (int i = 0; i < animales.size(); i++) {
             Object o = animales.get(i);
-            if (o instanceof  Dog) {
-                System.out.println(animales.get(i) +" es un  perro");
+            if (o instanceof Dog) {
+                System.out.println(animales.get(i) + " es un  perro");
             } else if (o instanceof Cat) {
-                System.out.println(animales.get(i)+ " es un gato");
+                System.out.println(animales.get(i) + " es un gato");
             }
 
         }
@@ -30,23 +30,28 @@ public class Ex7 {
 
 }
 
-class Cat{
+class Cat {
     String nombre;
-    Cat(String nombre){
-        this.nombre=nombre;
+
+    Cat(String nombre) {
+        this.nombre = nombre;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "El nom és: " + nombre;
     }
 }
-class Dog{
+
+class Dog {
     String nombre;
-    Dog(String nombre){
-        this.nombre=nombre;
+
+    Dog(String nombre) {
+        this.nombre = nombre;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "el nom és: " + nombre;
     }
 
