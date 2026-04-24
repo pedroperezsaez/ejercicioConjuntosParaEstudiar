@@ -3,8 +3,9 @@ package Exercici9;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-public class EX9 {
+//9. De manera simil·lar a l'exercici anterior, comprova la diferència de rendiment entre ArrayList i
+//LinkedList per les operacions d'inserir i esborrar elements pel mig de la llista.
+public class Ex9 {
     public static void main(String[] args) {
         List<Integer> l1 = new ArrayList<Integer>();
         fill(l1);

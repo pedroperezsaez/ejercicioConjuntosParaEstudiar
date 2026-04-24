@@ -2,7 +2,8 @@ package Exercici7;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//7. Crea les classes «Cat» i «Dog». Ara crea una llista on es pugui inserir objectes de les dues classes
+//següents. Fes un bucle on es tregui element per element i indiqui si es tracta d'un «Cat» o un «Dog».
 public class Ex7 {
     public static void main(String[] args) {
         List<Object> animales = new ArrayList<>();

@@ -4,7 +4,7 @@ import java.util.AbstractList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-
+// 6. Tenim una classe anomenada «IntList» que serà subclasse de «AbstractList»:
 public class Ex6 {
     public static void main(String[] args) {
         List il = new IntList(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9});

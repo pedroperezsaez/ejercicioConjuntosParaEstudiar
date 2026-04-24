@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
+//3. Implementa els objectes «PersonBirthComparator» i «PersonNameComparator» perquè el codi
+//anterior ordeni els objectes «Person» primer per any de naixament i després per ordre alfabètic del
+//seu nom.
 public class ex3 {
     public static void main(String[] args) {
         List<Person> persons = new ArrayList<Person>();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
+//5. Prova que no es poden afegir objectes de cap altre tipus més que «Country» a la llista anterior.
 public class Ex5 {
     public static void main(String[] args) {
         List<Country> countryList = new ArrayList<>();

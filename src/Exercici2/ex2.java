@@ -2,7 +2,9 @@ package Exercici2;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
-
+//2. Implementa la classe «Car». El resultat del codi anterior ha d'ésser que ha d'imprimir els objectes
+//d'acord amb el valor que es passa juntament amb la marca. És a dir: Fiat, Renault, Volkswagen i
+//Mercedes. Pista: implementeu la interfície «Comparable».
 public class ex2 {
     public static void main(String[] args) {
         Queue<Car> pq = new PriorityQueue<Car>();

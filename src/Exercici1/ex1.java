@@ -1,7 +1,6 @@
+//1- Tenim una classe anomenada «Sequence»:
 package Exercici1;
-
 import java.util.Iterator;
-
 public class ex1 {
     public static void main(String[] args) {
         Sequence seq = new Sequence();
