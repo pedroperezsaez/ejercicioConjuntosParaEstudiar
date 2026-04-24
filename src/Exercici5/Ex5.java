@@ -1,17 +1,18 @@
-package Exercici4;
+package Exercici5;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class Ex4 {
+public class Ex5 {
     public static void main(String[] args) {
         List<Country> countryList = new ArrayList<>();
         countryList.add(new Country("Spain"));
         countryList.add(new Country("Alemania"));
         countryList.add(new Country("Japon"));
-        countryList.add("Andorra");
+        // solo deja añadir elementos de tipo country
+        //countryList.add("Andorra");
         barajarPaises(countryList);
 
 
